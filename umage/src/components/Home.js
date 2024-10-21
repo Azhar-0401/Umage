@@ -7,25 +7,37 @@ import SAPUpgrade from './SAPUpgrade';
 import Footer from './Footer';
 import Product from './Product';
 import OurServices from './OurServices';
+import ContactUs from './ContactUs';
+import AboutUs from './AboutUs';
 
 const Home = () => {
   return (
     <>
       <Navbar />
-      <div id="top" className="pt-16"> {/* Add id="top" here */}
+      <div id="top" className="pt-16"> {/* This ensures scrolling to top */}
         <HeroSection />
         <LicensedSale />
         <SAPRollout />
         <SAPUpgrade />
-
-        {/* Add id="product-section" to enable scrolling */}
+        
+        {/* Product Section */}
         <div id="product-section">
           <Product />
         </div>
 
-        {/* Add id="services-section" to enable scrolling */}
+        {/* Services Section */}
         <div id="services-section">
           <OurServices />
+        </div>
+
+        {/* About Us Section */}
+        <div id="about-section">
+          <AboutUs />
+        </div>
+
+        {/* Contact Us Section */}
+        <div id="contact-section">
+          <ContactUs />
         </div>
       </div>
       <Footer />
